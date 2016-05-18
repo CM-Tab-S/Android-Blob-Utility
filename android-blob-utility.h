@@ -31,12 +31,12 @@
 
 /* Change value below to match your /system dump's SDK version. */
 /* See: https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels */
-#define SYSTEM_DUMP_SDK_VERSION 19 /* Android KitKat*/
+#define SYSTEM_DUMP_SDK_VERSION 20 /* Android Lollipop*/
 
 #define SYSTEM_DUMP_ROOT "/home/android/system_dump"
 
-#define SYSTEM_VENDOR "manufacturer"
-#define SYSTEM_DEVICE "device"
+#define SYSTEM_VENDOR "samsung"
+#define SYSTEM_DEVICE "t705"
 
 const char *blob_directories[] = {
     "/vendor/lib64/egl/",
@@ -45,6 +45,10 @@ const char *blob_directories[] = {
     "/vendor/lib/hw/",
     "/vendor/lib64/",
     "/vendor/lib/",
+    "/lib/drm/",
+    "/lib/omx/"
+    "/lib/soundfx/"
+    "/vendor/lib/mediadrm/",
     "/vendor/bin/",
     "/lib64/egl/",
     "/lib/egl/",
